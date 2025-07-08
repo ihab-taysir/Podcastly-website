@@ -1,0 +1,15 @@
+:root {
+  /* Light Theme Colors */
+  --color-background: #add0cc;
+  --color-foreground: #2c163e;
+  --color-primary: #9261eb;
+  --color-secondary: #ffffff;
+}
+
+.dark {
+  /* Dark Theme Colors */
+  --color-background: #2c163e;
+  --color-foreground: #add0cc;
+  --color-primary: #9261eb;
+  --color-secondary: #ffffff;
+}

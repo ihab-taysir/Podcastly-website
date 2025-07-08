@@ -1,0 +1,31 @@
+@import "../styles/theme-colors.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* امنع الترانزشن قبل الجاهزية */
+html:not(.theme-ready) * {
+  transition: none !important;
+}
+
+/* فعّل الترانزشن لما الصفحة تكون جاهزة */
+html.theme-ready,
+html.theme-ready body,
+html.theme-ready * {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+
+@font-face {
+  font-family: "Madani Arabic";
+  src: url("/fonts/Madani Arabic Regular.ttf") format("truetype");
+  font-weight: 100 900;
+  font-display: swap;
+}
