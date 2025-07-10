@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="mt-16 min-h-screen flex items-center justify-center bg-background text-foreground">
+    <section className="mt-24 min-h-screen flex items-center justify-center bg-background text-foreground">
       <div className="grid md:grid-cols-2 gap-8 items-center py-3 w-full">
         <div className="space-y-6">
           <h1 className="text-primary text-4xl md:text-5xl font-bold leading-tight">
