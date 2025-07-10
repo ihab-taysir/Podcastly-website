@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
           property="og:description"
           content="شركة مختصة في التسويق للبودكاست في جميع أرجاء الوطن العربي , نجعل لكل فكرة في داخلك صوتا يخرج إلى النور ."
         />
-        <meta property="og:image" content="/og-image.jpg" />
+        <meta property="og:image" content="/og-image.png" />
         <meta property="og:type" content="website" />
 
         {/* Twitter meta tags */}
@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
           name="twitter:description"
           content="شركة مختصة في التسويق للبودكاست في جميع أرجاء الوطن العربي , نجعل لكل فكرة في داخلك صوتا يخرج إلى النور ."
         />
-        <meta name="twitter:image" content="/og-image.jpg" />
+        <meta name="twitter:image" content="/og-image.png" />
 
         {/* Favicons */}
         <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32" />
