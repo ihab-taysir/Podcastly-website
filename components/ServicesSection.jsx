@@ -1,4 +1,4 @@
-import { services } from "@constants/services";
+import { services } from "../constants/services";
 import ServiceCard from "./ServicesCard";
 
 export default function ServicesSection() {

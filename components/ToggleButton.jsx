@@ -3,7 +3,7 @@
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { Moon, Sun } from "lucide-react";
-import { THEMES } from "@constants/theme";
+import { THEMES } from "../constants/theme";
 
 const ToggleButton = () => {
   const { theme, setTheme } = useTheme();
