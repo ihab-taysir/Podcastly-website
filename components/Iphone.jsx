@@ -1,5 +1,5 @@
 import React from "react";
-import { socialMedia } from "@constants/socialMedia";
+import { socialMedia } from "../constants/socialMedia";
 import Link from "next/link";
 
 const Iphone = () => {
