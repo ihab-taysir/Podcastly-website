@@ -10,16 +10,16 @@ const ToggleButton = () => {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true); // ننتظر تحميل المكون لمنع hydration errors
+    setMounted(true);
   }, []);
 
-  if (!mounted) return null; // ما نعرض الزر قبل التحميل الكامل
+  if (!mounted) return null;
 
   const toggleTheme = () => {
     const newTheme = theme === THEMES.DARK ? THEMES.LIGHT : THEMES.DARK;
     setTheme(newTheme);
   };
-
+  
   return (
     <button
       onClick={toggleTheme}

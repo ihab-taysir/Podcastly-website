@@ -1,5 +1,6 @@
 import React from "react";
 import { socialMedia } from "@constants/socialMedia";
+import Link from "next/link";
 
 const Iphone = () => {
   return (
@@ -47,10 +48,10 @@ const Iphone = () => {
           </span>
         </div>
 
-        {/* App Folder */}
+        {/* App Folder  */}
         <div className="bg-[#2c2c2e] rounded-3xl p-4 grid grid-cols-3 gap-4">
           {socialMedia.map((app, index) => (
-            <a
+            <Link
               key={index}
               href={app.link}
               target="_blank"
@@ -65,7 +66,7 @@ const Iphone = () => {
               <span className="text-[10px] text-white opacity-80 text-center">
                 {app.name}
               </span>
-            </a>
+            </Link>
           ))}
         </div>
 

@@ -6,7 +6,8 @@ import { ThemeProvider } from "next-themes";
 
 export const metadata = {
   title: "بودكاستلي - Podcastly",
-  description: "تلخيصات لأفضل الحلقات الصوتية بشكل نقاط سهلة وواضحة.",
+  description:
+    "شركة مختصة في التسويق للبودكاست في جميع أرجاء الوطن العربي , نجعل لكل فكرة في داخلك صوتا يخرج إلى النور .",
 };
 
 export default function RootLayout({ children }) {
@@ -17,7 +18,7 @@ export default function RootLayout({ children }) {
         <meta property="og:title" content="بودكاستلي - Podcastly" />
         <meta
           property="og:description"
-          content="تلخيصات لأفضل الحلقات الصوتية بشكل نقاط سهلة وواضحة."
+          content="شركة مختصة في التسويق للبودكاست في جميع أرجاء الوطن العربي , نجعل لكل فكرة في داخلك صوتا يخرج إلى النور ."
         />
         <meta property="og:image" content="/og-image.jpg" />
         <meta property="og:type" content="website" />
@@ -27,7 +28,7 @@ export default function RootLayout({ children }) {
         <meta name="twitter:title" content="بودكاستلي - Podcastly" />
         <meta
           name="twitter:description"
-          content="تلخيصات لأفضل الحلقات الصوتية بشكل نقاط سهلة وواضحة."
+          content="شركة مختصة في التسويق للبودكاست في جميع أرجاء الوطن العربي , نجعل لكل فكرة في داخلك صوتا يخرج إلى النور ."
         />
         <meta name="twitter:image" content="/og-image.jpg" />
 
@@ -37,11 +38,10 @@ export default function RootLayout({ children }) {
       </head>
 
       <body className="font-sans bg-background">
-        {/* ✅ ThemeProvider داخل body فقط */}
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
-          enableSystem={false}
+          enableSystem={true}
         >
           <Header />
           <Container>{children}</Container>
